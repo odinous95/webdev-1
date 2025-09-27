@@ -21,13 +21,123 @@
     </header>
     <main class="layout">
       <aside class="panel" aria-labelledby="filterTitle">
-        <h2 id="filterTitle">Sök &amp; filtrera</h2>
         <div class="search-row">
-          <footer>
-            <p>&copy; 2025 Fiktiva Zoo AB</p>
-          </footer>
+          <input
+            type="search"
+            id="search"
+            placeholder="Sök djur.."
+            aria-label="Sök djur"
+          />
+          <button id="clearSearch" title="Rensa sökning">Rensa</button>
+        </div>
+
+        <div class="filters">
+          <label for="typeFilter">Typ</label>
+          <select id="typeFilter">
+            <option value="">Alla</option>
+            <option value="Säkring">Rovdjur</option>
+            <option value="Pattedjur">Pattedjur</option>
+            <option value="Fågel">Fågel</option>
+          </select>
         </div>
       </aside>
+ <section class="animals-area" aria-labelledby="animalsTitle">
+  <h2 id="animalsTitle" style="margin-top: 0">Våra djur</h2>
+
+  <div class="animals-grid" id="animalsGrid">
+    <article
+      class="animal-card"
+      data-name="Lejon"
+      data-type="Rovdjur"
+      data-color="Gulbrun"
+      data-birth="2016"
+      data-desc="Starkt socialt kattdjur som lever i flock. Hanar har man."
+    >
+      <img src="images/lejon.jpg" alt="Lejon i zoo" />
+      <div class="card-body">
+        <h3>Lejon</h3>
+        <p class="meta">Typ: Rovdjur • Färg: Gulbrun • Född: 2016</p>
+        <p class="desc">
+          Starkt kattdjur som lever i grupper och rör sig över stora ytor i
+          naturen.
+        </p>
+        <div class="card-actions">
+          <button class="btn more-btn" aria-label="Visa mer om Lejon">
+            Visa mer
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article
+      class="animal-card"
+      data-name="Elefant"
+      data-type="Pattedjur"
+      data-color="Grå"
+      data-birth="2012"
+      data-desc="Världens största landdjur med tydlig snabel."
+    >
+      <img src="images/elefant.jpg" alt="Elefant" />
+      <div class="card-body">
+        <h3>Elefant</h3>
+        <p class="meta">Typ: Pattedjur • Färg: Grå • Född: 2012</p>
+        <p class="desc">
+          Stort socialt djur med hög intelligens, snabel och kraftiga betar.
+        </p>
+        <div class="card-actions">
+          <button class="btn more-btn" aria-label="Visa mer om Elefant">
+            Visa mer
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article
+      class="animal-card"
+      data-name="Giraff"
+      data-type="Pattedjur"
+      data-color="Fläckig"
+      data-birth="2018"
+      data-desc="Högst av alla landlevande djur, lever i savanner."
+    >
+      <img src="images/giraff.jpg" alt="Giraff" />
+      <div class="card-body">
+        <h3>Giraff</h3>
+        <p class="meta">Typ: Pattedjur • Färg: Fläckig • Född: 2018</p>
+        <p class="desc">
+          Giraffer når toppar av löv och har långa halsar och mönstrade fläckar.
+        </p>
+        <div class="card-actions">
+          <button class="btn more-btn" aria-label="Visa mer om Giraff">
+            Visa mer
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article
+      class="animal-card"
+      data-name="Pingvin"
+      data-type="Fågel"
+      data-color="Svartvit"
+      data-birth="2020"
+      data-desc="Dykande fågel som lever i kalla områden."
+    >
+      <img src="images/pingvin.jpg" alt="Pingvin" />
+      <div class="card-body">
+        <h3>Pingvin</h3>
+        <p class="meta">Typ: Fågel • Färg: Svartvit • Född: 2020</p>
+        <p class="desc">Dykande fågel som lever i kalla områden.</p>
+        <div class="card-actions">
+          <button class="btn more-btn" aria-label="Visa mer om Pingvin">
+            Visa mer
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
     </main>
   </body>
 </html>
